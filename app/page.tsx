@@ -11,19 +11,19 @@ export default function Home() {
     <>
       <div className="relative flex min-h-screen items-center justify-center font-sans">
         {/* Countdown */}
-        {/* <div
+        <div
           className={`absolute transition-all duration-1000 ease-in-out
         ${
           finished
             ? "opacity-0 scale-95 pointer-events-none"
             : "opacity-100 scale-100"
         }
-        `}
+        `}  
         >
           <div className="flex space-x-9">
             <LaunchCountdown onComplete={() => setFinished(true)} />
           </div>
-        </div> */}
+        </div>
 
         {/* Button */}
         <div
