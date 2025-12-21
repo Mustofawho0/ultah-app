@@ -21,13 +21,7 @@ export default function Home() {
         `}
         >
           <div className="flex space-x-9">
-            <LaunchCountdown
-              days={0}
-              hours={0}
-              minutes={1}
-              seconds={0}
-              onComplete={() => setFinished(true)}
-            />
+            <LaunchCountdown onComplete={() => setFinished(true)} />
           </div>
         </div>
 
