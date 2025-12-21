@@ -30,7 +30,7 @@ export default function Home() {
           className={
             `flex flex-col items-center justify-center absolute transition-all duration-1000 ease-in-out
         ${
-          finished == false
+          finished
             ? "opacity-100 scale-100"
             : "opacity-0 scale-95 pointer-events-none"
         }
