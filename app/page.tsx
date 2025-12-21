@@ -27,7 +27,8 @@ export default function Home() {
 
         {/* Button */}
         <div
-          className={`flex flex-col items-center justify-center absolute transition-all duration-1000 ease-in-out
+          className={
+            `flex flex-col items-center justify-center absolute transition-all duration-1000 ease-in-out
         ${
           finished
             ? "opacity-100 scale-100"
@@ -35,7 +36,7 @@ export default function Home() {
         }
         `}
         >
-          <div className=" max-w-4xl flex justify-center p-4">
+          <div className="max-w-4xl flex justify-center">
             <Texts />
           </div>
           <button className="px-8 py-4 text-xl cursor-pointer rounded-lg bg-black text-white hover:opacity-80">
