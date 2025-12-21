@@ -16,7 +16,7 @@ export const PlayMusic = () => {
   }, []);
   return (
     <>
-      {/* <div>
+      <div>
         <ReactPlayer
           slot="media"
           src={musicUrl}
@@ -30,7 +30,7 @@ export const PlayMusic = () => {
             console.log("Audio error:", e);
           }}
         />
-      </div> */}
+      </div>
     </>
   );
 };
