@@ -19,7 +19,29 @@ export default function Home() {
 
   return (
     <>
-      <div className="relative flex min-h-screen items-center justify-center font-sans">
+      <div className="relative flex min-h-screen w-full overflow-hidden items-center justify-center font-dancing">
+        {/* Image Before */}
+         <Image
+        src="/back2.jpg"
+        alt="Background Before"
+        fill
+        priority
+        quality={100}
+        className={`object-cover object-center transition-opacity duration-1000
+          ${finished ? "opacity-0" : "opacity-100"}
+        `}
+      />
+      {/* Image After */}
+       <Image
+        src="/background.jpg"
+        alt="Background After"
+        fill
+        priority
+        quality={100}
+        className={`object-cover object-center transition-opacity duration-1000
+          ${finished ? "opacity-100" : "opacity-0"}
+        `}
+      />
         {/* Countdown */}
         <div
           className={`absolute transition-all duration-1000 ease-in-out
@@ -28,7 +50,7 @@ export default function Home() {
             ? "opacity-0 scale-95 pointer-events-none"
             : "opacity-100 scale-100"
         }
-        `}  
+        `}
         >
           <div className="flex space-x-9">
             <LaunchCountdown onComplete={() => setFinished(true)} />

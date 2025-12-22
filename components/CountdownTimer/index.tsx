@@ -15,13 +15,15 @@ export const CountdownTimer = ({ count, prev, label }: countdownTimerProps) => {
 
   return (
     <>
-      <div className="flex items-center justify-center flex-col ">
+      <div className="flex items-center justify-center flex-col">
         <div className="flex flex-col items-center justify-center">
           <div className="relative w-42 h-42">
             <Image
               src={"/calendar_5106298.png"}
               alt="Calendar"
               fill
+              sizes="w-42 h-42"
+              loading="eager"
               className="object-contain opacity-40"
             />
           </div>

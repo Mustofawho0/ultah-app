@@ -16,7 +16,6 @@ export const LaunchCountdown = ({ onComplete }: LaunchCountdownProps) => {
   useEffect(() => {
     const fetchTargetTime = async () => {
       const res = await fetch("api/launch-time");
-      console.log(res);
       const data = await res.json();
       setTargetTime(data.targetTime);
     };

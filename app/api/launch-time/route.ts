@@ -6,7 +6,7 @@ export async function GET() {
     let targetTime = await redis.get<number>(KEY)
 
     if(!targetTime){
-        targetTime = Date.now() + 2 * 24 * 60 * 60 * 1000
+        targetTime = Date.now() + 1 * 24 * 60 * 60 * 1000
         await redis.set(KEY, targetTime)
     }
 
