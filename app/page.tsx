@@ -88,13 +88,13 @@ export default function Home() {
                 </Button>
               </div>
             </DialogTrigger>
-            <DialogContent className="bg-[url(/letter.jpg)] bg-scroll bg-cover max-w-md max-h-[80vh] overflow-y-auto overflow-x-hidden scroll-smooth">
+            <DialogContent className="bg-[url(/letter.jpg)] bg-scroll bg-cover max-w-md h-[80vh] overflow-y-auto overflow-x-hidden scroll-smooth ">
               <br />
               <br />
-              <DialogTitle className="text-left font-dancing text-base pl-2">
+              <DialogTitle className="text-left text-xl font-dancing pl-2">
                 Untuk Cayangg 💕
               </DialogTitle>
-              <DialogTitle className="text-right font-dancing pr-2">
+              <DialogTitle className="text-right text-lg font-dancing pr-2">
                 📅 24 Desember 2025
               </DialogTitle>
               <DialogDescription className="font-mono text-justify text-gray-800 px-2">
@@ -147,9 +147,9 @@ export default function Home() {
                 </span>
                 <br />
                 <br />
-                <Gallery />
               </DialogDescription>
             </DialogContent>
+                <Gallery />
           </Dialog>
         </div>
       </div>
