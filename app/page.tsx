@@ -13,6 +13,7 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import { DialogTitle } from "@radix-ui/react-dialog";
+import { Gallery } from "@/components/GalleyCarrousel";
 
 export default function Home() {
   const [finished, setFinished] = useState(false);
@@ -21,27 +22,27 @@ export default function Home() {
     <>
       <div className="relative flex min-h-screen w-full overflow-hidden items-center justify-center font-dancing">
         {/* Image Before */}
-         <Image
-        src="/back2.jpg"
-        alt="Background Before"
-        fill
-        priority
-        quality={100}
-        className={`object-cover object-center transition-opacity duration-1000
+        <Image
+          src="/back2.jpg"
+          alt="Background Before"
+          fill
+          priority
+          quality={100}
+          className={`object-cover object-center transition-opacity duration-1000
           ${finished ? "opacity-0" : "opacity-100"}
         `}
-      />
-      {/* Image After */}
-       <Image
-        src="/background.jpg"
-        alt="Background After"
-        fill
-        priority
-        quality={100}
-        className={`object-cover object-center transition-opacity duration-1000
+        />
+        {/* Image After */}
+        <Image
+          src="/background.jpg"
+          alt="Background After"
+          fill
+          priority
+          quality={100}
+          className={`object-cover object-center transition-opacity duration-1000
           ${finished ? "opacity-100" : "opacity-0"}
         `}
-      />
+        />
         {/* Countdown */}
         <div
           className={`absolute transition-all duration-1000 ease-in-out
@@ -87,13 +88,66 @@ export default function Home() {
                 </Button>
               </div>
             </DialogTrigger>
-            <DialogContent className="max-w-md overflow-hidden">
-              <DialogTitle>Untuk Cayangg 💕</DialogTitle>
-              <DialogDescription>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
-                tempora? Earum dolorum, dolore placeat ut excepturi temporibus
-                expedita repudiandae, aliquid repellat doloremque unde
-                voluptatum, a at quas numquam cupiditate totam?
+            <DialogContent className="bg-[url(/letter.jpg)] bg-scroll bg-cover max-w-md max-h-[80vh] overflow-y-auto overflow-x-hidden scroll-smooth">
+              <br />
+              <br />
+              <DialogTitle className="text-left font-dancing text-base pl-2">
+                Untuk Cayangg 💕
+              </DialogTitle>
+              <DialogTitle className="text-right font-dancing pr-2">
+                📅 24 Desember 2025
+              </DialogTitle>
+              <DialogDescription className="font-mono text-justify text-gray-800 px-2">
+                <span>
+                  Selamat ulang tahun cayanggnyaa akuu cintaanyaa akuu 🎉💕
+                  mudah mudahan apa yang cayangg kejar bisa terwujudkan, baik
+                  itu mimpi nyaa cayangg, keinginannyaa cayangg, dan jalan hidup
+                  cayangg 💕. Makasih cayangg udahh hadir dalam hidup akuu, akuu
+                  senengg bangett bisa ketemu cayangg, warnai hidup akuu, dan
+                  ngasih sudut pandang baruu tentangg cayangg. Akuu bahagiaaa
+                  bangett dengan hadir nyaa cayangg dalam hidup akuu. Dan akuu
+                  hadir di umur cayangg yangg bertambah 1 tahun. Akuu pengenn
+                  bangett jadi saksi perjalanan hidup nyaa cayangg, mulai dari
+                  cayangg grow up sampe cayangg bener bener menjadi perempuan
+                  yang hebattt 💕💕💕
+                </span>
+                <br />
+                <br />
+                <span>
+                  Selamat ulang tahunn cayangg nyaa akuu cintanyaa akuu 💕💕💕,
+                  mudah mudahan wish list nyaa cayangg untuk tahun depan bisa
+                  terlaksana. Aku percaya sama cayangg, walaupun jalan yang
+                  ditempuh cayangg cukup sakit, cukup berdarah darah tapii akuu
+                  percaya, percaya bangett kalau cayangg bisa lewatin semuaa.
+                  Karena, cayangg adalah perempuan yangg hebatt, masihh bisa
+                  berdiri tegak walaupun ada masalah yangg menghampiri cayangg.
+                  Dengan bertambahnya umur cayangg, mudah mudahan cayangg
+                  menjadi perempuan yangg selaluu kuattt 💕💕💕
+                </span>
+                <br />
+                <br />
+                <span>
+                  Di hari spesial ini, akuu cuma mau cayangg tauu kaloo cayangg
+                  itu berhargaaa bangett buat akuu 💕💕💕. Jangan pernah ragu
+                  sama diri cayangg sendiri, karena akuu selalu percayaa sama
+                  cayangg. Akuu mauu selalu barengg cayangg, darii bahagia nyaa
+                  cayangg, sedihh nyaa cayangg, semuaa nyaa barengg cayangg.
+                  Akuu kurangg bisa bikin kata kata yangg baguss buat cayangg 🥲
+                  tapii semua apa yang aku sampaikan itu berasal dari pikiran
+                  akuu dan perasaan akuu cayangg 💕💕💕💕
+                </span>
+                <br />
+                <br />
+                <span>
+                  Sekali lagii selamatt ulangg tahun cayanggg nyaa akuu
+                  cintaanyaa akuu 💕💕💕💕💕💕🎉🎉🎉🎉🎉🎉🎉. Wish youu all the
+                  best cayangg 💕💕💕💕. I love youu so muchh cayangg nyaa akuu
+                  cintaaanyaa akuuu 💕💕💕💕💕💕. Peluk hangaattt untukk
+                  cayanggg 💕💕💕💕💕💕💕
+                </span>
+                <br />
+                <br />
+                <Gallery />
               </DialogDescription>
             </DialogContent>
           </Dialog>
